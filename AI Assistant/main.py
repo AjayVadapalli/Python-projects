@@ -1,4 +1,4 @@
-import speech_recognition as sr
+import speech_recognition as sr # type: ignore
 import pyttsx3
 import webbrowser
 import playlist
