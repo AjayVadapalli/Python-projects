@@ -19,6 +19,7 @@ def processCommand(c):
         webbrowser.open("https://google.com/")
     elif "open spotify" in c.lower():
         webbrowser.open("https://open.spotify.com/")
+
     elif c.lower().startswith("play"):
         song = c.lower().split(" ")[1]
         link=playlist.music[song]
