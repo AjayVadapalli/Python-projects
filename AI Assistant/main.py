@@ -1,5 +1,5 @@
-import speech_recognition as sr # type: ignore
-import pyttsx3
+import speech_recognition as sr 
+import pyttsx3 # type: ignore
 import webbrowser
 import playlist
 
@@ -38,7 +38,7 @@ if __name__ == "__main__":
             if(text.lower() == "hello"):
                 speak("Yep!")
                 with sr.Microphone() as source:
-                    print("Zoro Active...")  
+                    print("Active...")  
                     audio = recognizer.listen(source)
                     command = recognizer.recognize_google(audio)
 
